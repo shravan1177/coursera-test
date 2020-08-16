@@ -1,201 +1,236 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
 <head>
-<title>Assigenment solution for module2</title>
-</head>
+	<title></title>
 <style>
- /*base styles*/
-p{
-	width: 325px;
-	float: left;
-}
-#p1{
-	background-color: gray;
-	padding: 50px 20px 20px 20px;
-	border: 3px solid black;
-	font-size: 19px;
-}
-#p2{
-	background-color: gray;
-	border: 3px solid black;
-	padding: 50px 20px 20px 20px;	
-	font-size: 19px;
-	margin-left: 10px;
-}	
-#p3{
-	background-color: gray;
-	padding: 50px 20px 20px 20px;
-	border: 3px solid black;
-	margin-left: 10px;
-	font-size: 19px;
-}
-h2.highlight{
-	position: relative;
-	top: 72px;
-	left: 245px;
-	border: 3px solid black;
-	background-color: pink;
-	width: 120px;
-	text-align: center;
-}
-h2.mainpoint{
-	float: top;
-	position: relative;
-	top: -1px;
-	right: 673px;
-	float: right;
-	border: 3px solid black;
-	background-color: red;
-	width: 100px;	
-	text-align: center;
-	color: white;
-}
-
-h2.hello{
-	position: relative;
-	top: -1px;
-	left: -185px;
-	float: right;
-	border: 3px solid black;
-	background-color: #F1FC67;
-	width: 100px;
-	text-align: center;
+*{
+	box-sizing: border-box;
 }
 h1{
-	text-align: center;
+	margin-bottom: 15px;
 }
-	
+p{
+	border: 1px solid black;
+	background-color: gray;
+	width: 90%;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: gray;
+	padding: 40px 10px 0px 10px;
+}
+.row{
+	width: 100%;
+}
+div{
+
+	margin-bottom: 10px;
+}
 @media(min-width: 992px){
-	h1{
+	.lg-1, .lg-2, .lg-3, .lg4, .lg-5, .lg-6, .lg-7{
+		float: left;
+	}
+	.lg-1{
+		width: 8.33%;
+		background-color: pink;
+	}
+	.lg-2{
+		width: 16.66%;
+	}
+	.lg-3{
+		width: 25%
+	}
+	.lg-4{
+		width: 33%;
+	}
+	.lg-5{
+		width: 41%;
+	}
+	.lg-6{
+		width: 50%;
+	}
+	.lg-7{
+		width: 91%
+	}
+	.x{
+	background-color: pink;
+	width: 10%;
+	border: 1px solid black;
+	position: relative;
+	top: 163px;
+	left: 22%;
+	text-align: center;
+	}
+    .y{
+	background-color: red;
+	color: white;
+	width: 10%;
+	border: 1px solid black;
+	position: relative;
+	top: 114px;
+	left: 54%;
+	text-align: center;
+	}
+	.z{
+	background-color: #F1FC67;
+	width: 10%;
+	border: 1px solid black;
+	position: relative;
+	top: 65px;
+	left: 86%;
 	text-align: center;
 	}
 	p{
-		width: 325px;
+		width: 100%;
+		height: 167%;
+	}
+	.cde{
+		margin-left: 4%;
+		margin-right: 4%;
+		width: 28%;
+	}
+	.ab{
+		margin-right: 4%;
+		margin-left: 4%;
+		width: 28%; 
+	}
+	.fgh{
+		width: 28%;
+	}
+
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.md-1, .md-2, .md-3, .md-4, .md-5, .md-6, .md-7{
 		float: left;
 	}
-	#p1{
-		background-color: gray;
-		padding: 50px 20px 20px 20px;
-		border: 3px solid black;
-		font-size: 19px;
-		
+	.md-1{
+		width: 8.33%
+		background-color: pink;
+	}
+	.md-2{
+		width: 16.66%
+	}
+	.md-3{
+		width: 25%;
+	}
+	.md-4{
+		width: 33%;
+	}
+	.md-5{
+		width: 41%;
+	}
+	.md-6{
+		width: 50%;
+	}
+	.md-7{
+		width: 91%
+	}
+	.x{
+	background-color: pink;
+	width: 14%;
+	border: 1px solid black;
+	position: relative;
+	top: 163px;
+	left:33.5%;
+	text-align: center;
+	}
+    .y{
+	background-color: red;
+	width: 14%;
+	color: white;
+	border: 1px solid black;
+	position: relative;
+	top: 114px;
+	left:83.5%;
+	text-align: center;
+	}
+	.z{
+	background-color: #F1FC67;
+	width: 14%;
+	border: 1px solid black;
+	position: relative;
+	top: 257px;
+	left:83.5%;
+	text-align: center;
 
 	}
-	#p2{
-		background-color: gray;
-		border: 3px solid black;
-		padding: 50px 20px 20px 20px;
-		font-size: 19px;
-		margin-left: 10px;
-	}
-	#p3{
-		background-color: gray;
-		padding: 50px 20px 20px 20px;
-		border: 3px solid black;
-		margin-left: 10px;
-		font-size: 19px;
-	}
-	h2.highlight{
-		position: relative;
-		top: 72px;
-		left: 245px;
-		border: 3px solid black;
-		background-color: pink;
-		width: 120px;
-		text-align: center;
+	.ab{
+		width: 104.4%;
+		margin-left: -15px;
 	}	
-	h2.mainpoint{
-		float: top;
-		position: relative;
-		top: -1px;
-		right: 595px;
-		float: right;
-		border: 3px solid black;
-		background-color: red;
-		width: 100px;	
-		text-align: center;
-		color: white;
-	}
-	h2.hello{
-		position: relative;
-		top: -1px;
-		left: -108px;
-		float: right;
-		border: 3px solid black;
-		background-color: #F1FC67;
-		width: 100px;
-		text-align: center;
-	}
+
 }
-@media (min-width: 768px) and (max-width: 991px){
-	h1{
-		text-align: center;
+@media(max-width: 767px){
+	.sd-1, .sd-2, .sd-3, .sd-4, .sd-5, .sd-6, .sd-7{
+		float: left;
 	}
-	#p1{
-		border: 3px solid black;
-		background-color: gray;
+	.sd-1{
+		width: 8.33%
 	}
-	#p2{
-		border: 3px solid black;
-		background-color: gray;	
+	.sd-2{
+		width: 16.66%
 	}
-	#p3{
-		border: 3px solid black;
-		background-color: gray;
-		width: 72%;
+	.sd-3{
+		width: 25%;
 	}
-	h2.highlight{
-		position: relative;
-		top: 72px;
-		left: 245px;
-		border: 3px solid black;
-		background-color: pink;
-		width: 120px;
-		text-align: center;
+	.sd-4{
+		width: 33%;
 	}
-	h2.mainpoint{
-		position: absolute;
-		top: 133px;
-		left: 654px;
+	.sd-5{
+		width: 41%;
 	}
-	h2.hello{
-		position: relative;
-		top: 245px;
-		left: -215px; 
+	.sd-6{
+		width: 50%;
 	}
+	.sd-7{
+		width: 91%
+	}
+.x{
+	background-color: pink;
+	width: 14%;
+	border: 1px solid black;
+	position: relative;
+	top: 154px;
+	left:72.4%;
+	font-size: 100%;
+	text-align: center;
 }
-@media(max-width:766px){
-	#p1{
-		background-color: gray;
-	}
-	#p2{
-		background-color: gray;
-	}
-	h2.mainpoint{
-		margin-top: -40px; 
-		position: relative;
-		right: 87px;
-		top: 73px;
-		background-color: red;
-	}
-	h2.hello{
-		position: relative;
-		top: 72px;
-		left:-86px;
-	}
+.y{
+	background-color: red;
+	width: 14%;
+	border: 1px solid black;
+	position: relative;
+	top: 306px;
+	left:72.4%;
+	text-align: center;
+	color: white;
+}
+.z{
+	background-color: yellow;
+	width: 14%;
+	border: 1px solid black;
+	position: relative;
+	top: 449px;
+	left:72.4%;
+	text-align: center;
+}
 }
 </style>
+</head>
 <body>
-<h1>Our Menu</h1>
-<h2 class="highlight">Chicken</h2>
-<p id="p1">lorem ipsum dolor site amet,consectetur 
-adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. </p>
-<h2 class="mainpoint">Beef</h2>
-<p id="p2"> lorem ipsum dolor site amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat 
-</p>
-<h2 class="hello">Sushi</h2>
-<p id="p3"> lorem ipsum dolor site amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat </p>
-
+<h1 style="text-align: center; margin-bottom:-100px;">Our Menu</h1>
+		<h2 class="x">Chicken</h2>
+		<h2 class="y">Beef</h2>
+		<h2 class="z">Sushi</h2>
+	
+	<div class="row">
+		<div class="lg-3 md-6 sd-7 cde"><p> lorem ipsum dolor site amet,consectetur 
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.</p></div>
+		<div class="lg-3 md-6 sd-7 fgh"> <p>lorem ipsum dolor site amet,consectetur 
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.</p></div>
+		<div class="lg-3 md-6 sd-7 ab"> <p>lorem ipsum dolor site amet,consectetur 
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.</p></div>
+	
+	</div>
 </body>
 </html>
